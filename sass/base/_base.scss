@@ -1,0 +1,54 @@
+
+*,
+*::after,
+*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html{
+ /* here we have define 62.5% as we want to make it as a 10px not 16px which is by default value
+ of a browser and we have defined as percentage for good user experience (10/16)  here we have defined 1rem equal to 10px*/
+  font-size: 62.5%;
+
+  
+
+  @include respond(tab-land){ //width <= 1200?
+    font-size: 56.25%;    //1rem is equal to then  9px 9/16=50%
+  }
+
+
+  @include respond(tab-port){ // width <= 900?
+    font-size: 50%;      //1rem is equal to  then 8px 8/16=50%
+  }
+
+  @include respond(phone){ // width <=600?
+    font-size: 31.25%;      //1rem is equal to  then 8px 5/16=50%
+  }
+  
+  @include respond(big-desktop){ // width => 1200?
+    font-size: 75%;       //1rem is equal to  then 12px 12/16=50%
+  }
+  
+
+}
+
+body{
+  box-sizing: border-box;
+  padding: 3rem;
+
+  @include respond(tab-port){ // width <= 900?
+    padding: 0;
+  }
+
+  ::selection{
+    background-color: $color-primary;
+    color: $color-white;
+  }
+}
+
+
+
+
+

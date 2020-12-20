@@ -1,0 +1,39 @@
+// "scripts": {
+//"script:name: "package name scssfoldername/scssfilename cssfoldername/cssfilename
+// runcss npm run scriptname
+//   "compile:sass": "node-sass sass/main.scss css/style.css"
+// },
+/* rem is font size value rem always calculated on the basis of paren value for eaxample
+browser default value is 16px then if wen mention any children element value is 1.5rem then its value would be 16 * 1.5 = 24px that's how em value works but when we measurement length with em 
+then it takes current font value as reference */
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utillities";
+
+@import "components/button";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/card";
+@import "components/story";
+@import "components/bg-video";
+@import "components/form";
+
+
+
+@import "layouts/grid";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/navigation";
+@import "layouts/popup";
+
+@import "pages/home";
+
+
+
+
